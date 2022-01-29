@@ -232,7 +232,6 @@ class Spam {
 
             if (str.button) sp.button1.innerText = str.button;
             if (str.button_ok) sp.button1.innerText = str.button_ok;
-            if (str.button_cancel) sp.button2.innerText = str.button_cancel;
 
            
             if (str.action) {
@@ -336,6 +335,9 @@ class Spam {
             else sp.text.innerText = "";
 
             if (str.button)sp.button1.innerText = str.button;
+            if (str.button_ok) sp.button1.innerText = str.button_ok;
+            if (str.button_cancel) sp.button2.innerText = str.button_cancel;
+            
 
             //Accion al hacer click
             if (str.action) {
@@ -455,6 +457,7 @@ class Spam {
             else sp.text.innerText = "";
 
             if (str.button)sp.button1.innerText = str.button;
+            if (str.button_ok) sp.button1.innerText = str.button_ok;
             
             // Accion al hacer click
             if (str.action) {
