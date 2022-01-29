@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> StyleSpam </title>
+
+    <!-- use library -->
+    <script src="../stylespam.min.js"></script>
+
+</head>
+<body>
+
+
+    <script>
+
+        //creating style of spam
+        var sp = new Spam({
+            box: {
+                width: "300px"
+            },
+            button: {
+                borderRadius: "10px",
+                backgroundColor: "red"
+            }
+        });
+
+        //prompt example
+        sp.prompt({
+            title: "Test",
+            text: "Write somewhat",
+            button: "See",
+
+            action: function(n) {
+                //simple alert example
+                sp.alert("You wrote: "+ n)
+            }
+        })
+
+
+    </script>
+</body>
+</html>
